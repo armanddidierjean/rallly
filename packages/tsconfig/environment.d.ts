@@ -76,6 +76,22 @@ declare global {
        * Determines what email provider to use. "smtp" or "ses"
        */
       EMAIL_PROVIDER?: "smtp" | "ses";
+	  /**
+       *
+       */
+      NEXT_PUBLIC_OIDC_NAME?: string;
+      /**
+       *
+       */
+      OIDC_DISCOVERY_URL?: string;
+      /**
+       *
+       */
+      OIDC_CLIENT_ID?: string;
+      /**
+       *
+       */
+      OIDC_CLIENT_SECRET?: string;
       /**
        * AWS access key ID
        */

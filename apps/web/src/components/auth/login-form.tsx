@@ -405,6 +405,11 @@ export const LoginForm: React.FunctionComponent<{
         >
           {t("notRegistered")}
         </Link>
+        {process.env.NEXT_PUBLIC_OIDC_NAME ? (
+          <Link href="/auth/sso_login" className="btn-default h-12 w-full px-6">
+            {process.env.NEXT_PUBLIC_OIDC_NAME}
+          </Link>
+        ) : null}
       </div>
     </form>
   );
